@@ -1,16 +1,19 @@
 <template>
 
-  <HolaMundoView></HolaMundoView>
+  <!-- <HolaMundoView></HolaMundoView> -->
+  <ContadorView/>
 
 </template>
 
 <script>
-import HolaMundoView from "../src/views/HolaMundoViews.vue";
+import HolaMundoView from "@/views/HolaMundoViews.vue";
+import ContadorView from  "@/views/ContadorView.vue"
 
 export default {
   name: 'App',
   components: {
     HolaMundoView,
+    ContadorView,
   },
 };
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <h1>Contador</h1>
+    <h1>{{ title }}</h1>
     <p>{{ numero }} <sup>2</sup>={{ calCuadrado }}</p>
     <div>
       <button v-on:click="incrementar()">+1</button>
-      <button v-on:click="decrementar()">-1</button>
+      <button @click="decrementar()">-1</button>
     </div>
 
 
@@ -17,15 +17,37 @@
     {{ 1 + 1 }}
     true? 'Es verdadero' : 'Es falso' 
     {{ false ? "Es verdadero" : "Es falso" }} -->
+
   </div>
 </template>
 
 <script>
 export default {
+
+  // props: ['title', 'value'],
+  props: {
+    title: String,
+    value: {
+      type: Number,
+      required: false,
+      default: 100,
+      validator(value) {
+        return value > 0;
+      },
+    },
+    p1: Boolean,
+    p2: Array,
+    p3: Object,
+    p4: Function,
+    p5: Date,
+    p6: Symbol,
+  },
+
+
   data() {
     return {
-      numero: 5,
-      texto: "Belén Paca",
+      numero: this.value,
+      titulo: "Contador",
       activo: true,
       usuario: {
         nombre: "Belén",
@@ -54,9 +76,17 @@ export default {
     calCuadrado() {
       console.log("Entro a la propiedad computada");
       return this.numero * this.numero;
-    }
+    },
 
-  }
+  },
+  created() {
+    if (this.value > 0) {
+      console.log('Es correcto');
+    } else {
+      throw new Error('Error el valor no puede ser menos que cero')
+    }
+  },
+
 };
 </script>
 

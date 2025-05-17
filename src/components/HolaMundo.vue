@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 .titulo {
     color: red;
 
@@ -29,4 +29,5 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size:40px;
 }
+
 </style>

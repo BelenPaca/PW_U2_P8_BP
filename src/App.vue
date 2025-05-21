@@ -3,15 +3,18 @@
   <!-- <HolaMundoView></HolaMundoView> -->
   <!-- <ContadorView/> -->
   <!-- <EstudianteView/> -->
-   <EstudianteTablaViewVue/>
+  <!--EstudianteTablaViewVue/>-->
+  <BibliotecaView />
+
 
 </template>
 
 <script>
 import HolaMundoView from "@/views/HolaMundoViews.vue";
-import ContadorView from  "@/views/ContadorView.vue"
+import ContadorView from "@/views/ContadorView.vue"
 import EstudianteView from "@/views/EstudianteView.vue"
 import EstudianteTablaViewVue from "@/views/EstudianteTablaView.vue"
+import BibliotecaView from "@/views/BibliotecaView.vue";
 
 
 export default {
@@ -21,6 +24,7 @@ export default {
     ContadorView,
     EstudianteView,
     EstudianteTablaViewVue,
+    BibliotecaView,
   },
 };
 </script>

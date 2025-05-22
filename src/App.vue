@@ -4,7 +4,8 @@
   <!-- <ContadorView/> -->
   <!-- <EstudianteView/> -->
   <!--EstudianteTablaViewVue/>-->
-  <BibliotecaView />
+  <!-- <BibliotecaView /> -->
+  <PreguntaView />
 
 
 </template>
@@ -15,6 +16,7 @@ import ContadorView from "@/views/ContadorView.vue"
 import EstudianteView from "@/views/EstudianteView.vue"
 import EstudianteTablaViewVue from "@/views/EstudianteTablaView.vue"
 import BibliotecaView from "@/views/BibliotecaView.vue";
+import PreguntaView from './views/PreguntaView.vue';
 
 
 export default {
@@ -25,6 +27,7 @@ export default {
     EstudianteView,
     EstudianteTablaViewVue,
     BibliotecaView,
+    PreguntaView,
   },
 };
 </script>

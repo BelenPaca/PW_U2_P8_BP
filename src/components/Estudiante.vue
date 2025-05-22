@@ -63,7 +63,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container {
   background: #aea0cc;
   border: 1px solid;

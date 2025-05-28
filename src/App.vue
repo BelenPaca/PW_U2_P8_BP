@@ -5,7 +5,8 @@
   <!-- <EstudianteView/> -->
   <!--EstudianteTablaViewVue/>-->
   <!-- <BibliotecaView /> -->
-  <PreguntaView />
+  <!--<PreguntaView />-->
+  <NasaView />
 
 
 </template>
@@ -17,7 +18,7 @@ import EstudianteView from "@/views/EstudianteView.vue"
 import EstudianteTablaViewVue from "@/views/EstudianteTablaView.vue"
 import BibliotecaView from "@/views/BibliotecaView.vue";
 import PreguntaView from './views/PreguntaView.vue';
-
+import NasaView from './views/NasaView.vue';
 
 export default {
   name: 'App',
@@ -28,6 +29,7 @@ export default {
     EstudianteTablaViewVue,
     BibliotecaView,
     PreguntaView,
+    NasaView,
   },
 };
 </script>
